@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Drupal\Tests\features\Kernel\FeaturesAssignTest" file="/var/www/docroot/modules/features/tests/src/Kernel/FeaturesAssignTest.php" tests="11" assertions="21" failures="1" errors="0" time="42.204462">
+    <testcase name="testAssignBase" class="Drupal\Tests\features\Kernel\FeaturesAssignTest" file="/var/www/docroot/modules/features/tests/src/Kernel/FeaturesAssignTest.php" line="58" assertions="3" time="4.477801"/>
+    <testcase name="testAssignCore" class="Drupal\Tests\features\Kernel\FeaturesAssignTest" file="/var/www/docroot/modules/features/tests/src/Kernel/FeaturesAssignTest.php" line="102" assertions="4" time="5.003028"/>
+    <testcase name="testAssignDependency" class="Drupal\Tests\features\Kernel\FeaturesAssignTest" file="/var/www/docroot/modules/features/tests/src/Kernel/FeaturesAssignTest.php" line="141" assertions="3" time="3.499882"/>
+    <testcase name="testAssignExclude" class="Drupal\Tests\features\Kernel\FeaturesAssignTest" file="/var/www/docroot/modules/features/tests/src/Kernel/FeaturesAssignTest.php" line="188" assertions="1" time="3.485778"/>
+    <testcase name="testAssignExisting" class="Drupal\Tests\features\Kernel\FeaturesAssignTest" file="/var/www/docroot/modules/features/tests/src/Kernel/FeaturesAssignTest.php" line="195" assertions="1" time="3.609798"/>
+    <testcase name="testAssignForwardDependency" class="Drupal\Tests\features\Kernel\FeaturesAssignTest" file="/var/www/docroot/modules/features/tests/src/Kernel/FeaturesAssignTest.php" line="202" assertions="3" time="3.481538"/>
+    <testcase name="testAssignNamespace" class="Drupal\Tests\features\Kernel\FeaturesAssignTest" file="/var/www/docroot/modules/features/tests/src/Kernel/FeaturesAssignTest.php" line="275" assertions="1" time="3.667192"/>
+    <testcase name="testAssignOptionalType" class="Drupal\Tests\features\Kernel\FeaturesAssignTest" file="/var/www/docroot/modules/features/tests/src/Kernel/FeaturesAssignTest.php" line="282" assertions="1" time="4.425370"/>
+    <testcase name="testAssignPackages" class="Drupal\Tests\features\Kernel\FeaturesAssignTest" file="/var/www/docroot/modules/features/tests/src/Kernel/FeaturesAssignTest.php" line="289" assertions="1" time="4.558837"/>
+    <testcase name="testAssignProfile" class="Drupal\Tests\features\Kernel\FeaturesAssignTest" file="/var/www/docroot/modules/features/tests/src/Kernel/FeaturesAssignTest.php" line="296" assertions="1" time="3.203135"/>
+    <testcase name="testAssignSiteType" class="Drupal\Tests\features\Kernel\FeaturesAssignTest" file="/var/www/docroot/modules/features/tests/src/Kernel/FeaturesAssignTest.php" line="303" assertions="2" time="2.792103">
+      <failure type="PHPUnit_Framework_ExpectationFailedException">Drupal\Tests\features\Kernel\FeaturesAssignTest::testAssignSiteType
+Failed asserting that false is true.
+
+/var/www/docroot/core/tests/Drupal/KernelTests/AssertLegacyTrait.php:31
+/var/www/docroot/modules/features/tests/src/Kernel/FeaturesAssignTest.php:334
+</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

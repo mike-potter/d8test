@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="/core/misc/favicon.ico" type="image/vnd.microsoft.icon" />
+
+    <title>Edit | Drupal</title>
+    <style media="all">
+@import url("/core/assets/vendor/normalize-css/normalize.css?ocqftc");
+@import url("/core/themes/stable/css/system/components/ajax-progress.module.css?ocqftc");
+@import url("/core/themes/stable/css/system/components/align.module.css?ocqftc");
+@import url("/core/themes/stable/css/system/components/autocomplete-loading.module.css?ocqftc");
+@import url("/core/themes/stable/css/system/components/fieldgroup.module.css?ocqftc");
+@import url("/core/themes/stable/css/system/components/container-inline.module.css?ocqftc");
+@import url("/core/themes/stable/css/system/components/clearfix.module.css?ocqftc");
+@import url("/core/themes/stable/css/system/components/details.module.css?ocqftc");
+@import url("/core/themes/stable/css/system/components/hidden.module.css?ocqftc");
+@import url("/core/themes/stable/css/system/components/item-list.module.css?ocqftc");
+@import url("/core/themes/stable/css/system/components/js.module.css?ocqftc");
+@import url("/core/themes/stable/css/system/components/nowrap.module.css?ocqftc");
+@import url("/core/themes/stable/css/system/components/position-container.module.css?ocqftc");
+@import url("/core/themes/stable/css/system/components/progress.module.css?ocqftc");
+@import url("/core/themes/stable/css/system/components/reset-appearance.module.css?ocqftc");
+@import url("/core/themes/stable/css/system/components/resize.module.css?ocqftc");
+@import url("/core/themes/stable/css/system/components/sticky-header.module.css?ocqftc");
+@import url("/core/themes/stable/css/system/components/tabledrag.module.css?ocqftc");
+@import url("/core/themes/stable/css/system/components/tablesort.module.css?ocqftc");
+@import url("/core/themes/stable/css/system/components/tree-child.module.css?ocqftc");
+@import url("/core/themes/stable/css/system/system.admin.css?ocqftc");
+@import url("/modules/features/modules/features_ui/css/features_ui.admin.css?ocqftc");
+</style>
+<style media="all">
+@import url("/core/themes/classy/css/components/action-links.css?ocqftc");
+@import url("/core/themes/classy/css/components/breadcrumb.css?ocqftc");
+@import url("/core/themes/classy/css/components/button.css?ocqftc");
+@import url("/core/themes/classy/css/components/collapse-processed.css?ocqftc");
+@import url("/core/themes/classy/css/components/container-inline.css?ocqftc");
+@import url("/core/themes/classy/css/components/details.css?ocqftc");
+@import url("/core/themes/classy/css/components/exposed-filters.css?ocqftc");
+@import url("/core/themes/classy/css/components/field.css?ocqftc");
+@import url("/core/themes/classy/css/components/form.css?ocqftc");
+@import url("/core/themes/classy/css/components/icons.css?ocqftc");
+@import url("/core/themes/classy/css/components/inline-form.css?ocqftc");
+@import url("/core/themes/classy/css/components/item-list.css?ocqftc");
+@import url("/core/themes/classy/css/components/link.css?ocqftc");
+@import url("/core/themes/classy/css/components/links.css?ocqftc");
+@import url("/core/themes/classy/css/components/menu.css?ocqftc");
+@import url("/core/themes/classy/css/components/more-link.css?ocqftc");
+@import url("/core/themes/classy/css/components/pager.css?ocqftc");
+@import url("/core/themes/classy/css/components/tabledrag.css?ocqftc");
+@import url("/core/themes/classy/css/components/tableselect.css?ocqftc");
+@import url("/core/themes/classy/css/components/tablesort.css?ocqftc");
+@import url("/core/themes/classy/css/components/tabs.css?ocqftc");
+@import url("/core/themes/classy/css/components/textarea.css?ocqftc");
+@import url("/core/themes/classy/css/components/ui-dialog.css?ocqftc");
+@import url("/core/themes/classy/css/components/progress.css?ocqftc");
+@import url("/core/themes/classy/css/components/messages.css?ocqftc");
+</style>
+
+    
+<!--[if lte IE 8]>
+<script src="/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
+<![endif]-->
+<script src="/core/assets/vendor/modernizr/modernizr.min.js?v=3.3.1"></script>
+
+  </head>
+  <body class="user-logged-in path-admin">
+        <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+    <div class="layout-container">
+
+  <header role="banner">
+    
+  </header>
+
+  
+  
+
+  
+
+  
+
+  
+
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>
+    <div class="layout-content">
+        <div class="region region-content">
+    
+<div id="features-edit-wrapper"><form data-drupal-selector="features-edit-form" action="/admin/config/development/features/edit" method="post" id="features-edit-form" accept-charset="UTF-8">
+  <input data-drupal-selector="form-kig5p8xphc0brmos5m3qtcxl-thghdfzfqo0fzs5uqe" type="hidden" name="form_build_id" value="form-kIG5P8XPhC0brmOS5M3QTcXl-thGHdFzFqo0fzs5uqE" />
+<input data-drupal-selector="edit-features-edit-form-form-token" type="hidden" name="form_token" value="alovzUfLFjI_svzO47K06Kfx9I17QWKkttlD8dbW58c" />
+<input data-drupal-selector="edit-features-edit-form" type="hidden" name="form_id" value="features_edit_form" />
+<div id='features-export-wrapper'><fieldset data-drupal-selector="edit-export" aria-describedby="edit-export--description" id="edit-export" class="js-form-item form-item js-form-wrapper form-wrapper">
+      <legend>
+    <span class="fieldset-legend">Components</span>
+  </legend>
+  <div class="fieldset-wrapper">
+            <div id='features-filter' class='element-invisible'><fieldset data-drupal-selector="edit-features-filter-wrapper" id="edit-features-filter-wrapper" class="js-form-item form-item js-form-wrapper form-wrapper">
+      <legend>
+    <span class="fieldset-legend">Filters</span>
+  </legend>
+  <div class="fieldset-wrapper">
+            <div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-features-filter form-item-features-filter">
+      <label for="edit-features-filter">Search</label>
+        <input data-drupal-selector="edit-features-filter" type="text" id="edit-features-filter" name="features_filter" value="" size="60" maxlength="128" class="form-text" />
+
+        </div>
+<span class='features-filter-clear'>Clear</span><div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-checkall form-item-checkall">
+        <input class="features-checkall form-checkbox" data-drupal-selector="edit-checkall" type="checkbox" id="edit-checkall" name="checkall" value="1" />
+
+        <label for="edit-checkall" class="option">Select all</label>
+      </div>
+
+          </div>
+</fieldset>
+</div><div class='features-export-parent component-system_simple'><details class="features-export-component js-form-wrapper form-wrapper" data-drupal-selector="edit-system-simple-sources" id="edit-system-simple-sources">    <summary role="button" aria-controls="edit-system-simple-sources" aria-expanded="false" aria-pressed="false">Simple configuration (<span class="component-count">11</span>)</summary><div class="details-wrapper">
+    <span class='component-select'><div id="edit-sources-system-simple" class="form-checkboxes"><div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-system-simple-sources-selected-coremenustatic-menu-link-overrides form-item-system-simple-sources-selected-coremenustatic-menu-link-overrides">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-system-simple-sources-selected-coremenustatic-menu-link-overrides" type="checkbox" id="edit-system-simple-sources-selected-coremenustatic-menu-link-overrides" name="system_simple[sources][selected][core.menu.static_menu_link_overrides]" value="core.menu.static_menu_link_overrides" />
+
+        <label for="edit-system-simple-sources-selected-coremenustatic-menu-link-overrides" class="option">core.menu.static_menu_link_overrides</label>
+      </div>
+<div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-system-simple-sources-selected-featuressettings form-item-system-simple-sources-selected-featuressettings">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-system-simple-sources-selected-featuressettings" type="checkbox" id="edit-system-simple-sources-selected-featuressettings" name="system_simple[sources][selected][features.settings]" value="features.settings" />
+
+        <label for="edit-system-simple-sources-selected-featuressettings" class="option">features.settings</label>
+      </div>
+<div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-system-simple-sources-selected-systemimage form-item-system-simple-sources-selected-systemimage">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-system-simple-sources-selected-systemimage" type="checkbox" id="edit-system-simple-sources-selected-systemimage" name="system_simple[sources][selected][system.image]" value="system.image" />
+
+        <label for="edit-system-simple-sources-selected-systemimage" class="option">system.image</label>
+      </div>
+<div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-system-simple-sources-selected-systemimagegd form-item-system-simple-sources-selected-systemimagegd">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-system-simple-sources-selected-systemimagegd" type="checkbox" id="edit-system-simple-sources-selected-systemimagegd" name="system_simple[sources][selected][system.image.gd]" value="system.image.gd" />
+
+        <label for="edit-system-simple-sources-selected-systemimagegd" class="option">system.image.gd</label>
+      </div>
+<div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-system-simple-sources-selected-systemmail form-item-system-simple-sources-selected-systemmail">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-system-simple-sources-selected-systemmail" type="checkbox" id="edit-system-simple-sources-selected-systemmail" name="system_simple[sources][selected][system.mail]" value="system.mail" />
+
+        <label for="edit-system-simple-sources-selected-systemmail" class="option">system.mail</label>
+      </div>
+<div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-system-simple-sources-selected-systemrss form-item-system-simple-sources-selected-systemrss">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-system-simple-sources-selected-systemrss" type="checkbox" id="edit-system-simple-sources-selected-systemrss" name="system_simple[sources][selected][system.rss]" value="system.rss" />
+
+        <label for="edit-system-simple-sources-selected-systemrss" class="option">system.rss</label>
+      </div>
+<div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-system-simple-sources-selected-systemtheme form-item-system-simple-sources-selected-systemtheme">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-system-simple-sources-selected-systemtheme" type="checkbox" id="edit-system-simple-sources-selected-systemtheme" name="system_simple[sources][selected][system.theme]" value="system.theme" />
+
+        <label for="edit-system-simple-sources-selected-systemtheme" class="option">system.theme</label>
+      </div>
+<div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-system-simple-sources-selected-systemthemeglobal form-item-system-simple-sources-selected-systemthemeglobal">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-system-simple-sources-selected-systemthemeglobal" type="checkbox" id="edit-system-simple-sources-selected-systemthemeglobal" name="system_simple[sources][selected][system.theme.global]" value="system.theme.global" />
+
+        <label for="edit-system-simple-sources-selected-systemthemeglobal" class="option">system.theme.global</label>
+      </div>
+<div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-system-simple-sources-selected-userflood form-item-system-simple-sources-selected-userflood">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-system-simple-sources-selected-userflood" type="checkbox" id="edit-system-simple-sources-selected-userflood" name="system_simple[sources][selected][user.flood]" value="user.flood" />
+
+        <label for="edit-system-simple-sources-selected-userflood" class="option">user.flood</label>
+      </div>
+<div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-system-simple-sources-selected-usermail form-item-system-simple-sources-selected-usermail">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-system-simple-sources-selected-usermail" type="checkbox" id="edit-system-simple-sources-selected-usermail" name="system_simple[sources][selected][user.mail]" value="user.mail" />
+
+        <label for="edit-system-simple-sources-selected-usermail" class="option">user.mail</label>
+      </div>
+<div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-system-simple-sources-selected-usersettings form-item-system-simple-sources-selected-usersettings">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-system-simple-sources-selected-usersettings" type="checkbox" id="edit-system-simple-sources-selected-usersettings" name="system_simple[sources][selected][user.settings]" value="user.settings" />
+
+        <label for="edit-system-simple-sources-selected-usersettings" class="option">user.settings</label>
+      </div>
+</div>
+</span></div>
+</details>
+<div class='component-list features-export-list features-export-empty'><span class='component-included'><div id="edit-system-simple-included" class="form-checkboxes"></div>
+</span><span class='component-detected'><div id="edit-system-simple-detected" class="form-checkboxes"></div>
+</span><span class='component-added'><div id="edit-system-simple-added" class="form-checkboxes"></div>
+</span></div></div><div class='features-export-parent component-action'><details class="features-export-component js-form-wrapper form-wrapper" data-drupal-selector="edit-action-sources" id="edit-action-sources">    <summary role="button" aria-controls="edit-action-sources" aria-expanded="false" aria-pressed="false">Action (<span class="component-count">3</span>)</summary><div class="details-wrapper">
+    <span class='component-select'><div id="edit-sources-action" class="form-checkboxes"><div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-action-sources-selected-user-block-user-action form-item-action-sources-selected-user-block-user-action">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-action-sources-selected-user-block-user-action" type="checkbox" id="edit-action-sources-selected-user-block-user-action" name="action[sources][selected][user_block_user_action]" value="user_block_user_action" />
+
+        <label for="edit-action-sources-selected-user-block-user-action" class="option">Block the selected user(s)  <span class="config-name">(user_block_user_action)</span></label>
+      </div>
+<div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-action-sources-selected-user-cancel-user-action form-item-action-sources-selected-user-cancel-user-action">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-action-sources-selected-user-cancel-user-action" type="checkbox" id="edit-action-sources-selected-user-cancel-user-action" name="action[sources][selected][user_cancel_user_action]" value="user_cancel_user_action" />
+
+        <label for="edit-action-sources-selected-user-cancel-user-action" class="option">Cancel the selected user account(s)  <span class="config-name">(user_cancel_user_action)</span></label>
+      </div>
+<div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-action-sources-selected-user-unblock-user-action form-item-action-sources-selected-user-unblock-user-action">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-action-sources-selected-user-unblock-user-action" type="checkbox" id="edit-action-sources-selected-user-unblock-user-action" name="action[sources][selected][user_unblock_user_action]" value="user_unblock_user_action" />
+
+        <label for="edit-action-sources-selected-user-unblock-user-action" class="option">Unblock the selected user(s)  <span class="config-name">(user_unblock_user_action)</span></label>
+      </div>
+</div>
+</span></div>
+</details>
+<div class='component-list features-export-list features-export-empty'><span class='component-included'><div id="edit-action-included" class="form-checkboxes"></div>
+</span><span class='component-detected'><div id="edit-action-detected" class="form-checkboxes"></div>
+</span><span class='component-added'><div id="edit-action-added" class="form-checkboxes"></div>
+</span></div></div><div class='features-export-parent component-block'><details class="features-export-component js-form-wrapper form-wrapper" data-drupal-selector="edit-block-sources" id="edit-block-sources">    <summary role="button" aria-controls="edit-block-sources" aria-expanded="false" aria-pressed="false">Block (<span class="component-count">1</span>)</summary><div class="details-wrapper">
+    <span class='component-select'><div id="edit-sources-block" class="form-checkboxes"><div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-block-sources-selected-rj8zbavu form-item-block-sources-selected-rj8zbavu">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-block-sources-selected-rj8zbavu" type="checkbox" id="edit-block-sources-selected-rj8zbavu" name="block[sources][selected][rj8zbavu]" value="rj8zbavu" />
+
+        <label for="edit-block-sources-selected-rj8zbavu" class="option">zhtW22NS  <span class="config-name">(rj8zbavu)</span></label>
+      </div>
+</div>
+</span></div>
+</details>
+<div class='component-list features-export-list features-export-empty'><span class='component-included'><div id="edit-block-included" class="form-checkboxes"></div>
+</span><span class='component-detected'><div id="edit-block-detected" class="form-checkboxes"></div>
+</span><span class='component-added'><div id="edit-block-added" class="form-checkboxes"></div>
+</span></div></div><div class='features-export-parent component-date_format'><details class="features-export-component js-form-wrapper form-wrapper" data-drupal-selector="edit-date-format-sources" id="edit-date-format-sources">    <summary role="button" aria-controls="edit-date-format-sources" aria-expanded="false" aria-pressed="false">Date format (<span class="component-count">11</span>)</summary><div class="details-wrapper">
+    <span class='component-select'><div id="edit-sources-date-format" class="form-checkboxes"><div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-date-format-sources-selected-fallback form-item-date-format-sources-selected-fallback">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-date-format-sources-selected-fallback" type="checkbox" id="edit-date-format-sources-selected-fallback" name="date_format[sources][selected][fallback]" value="fallback" />
+
+        <label for="edit-date-format-sources-selected-fallback" class="option">Fallback date format  <span class="config-name">(fallback)</span></label>
+      </div>
+<div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-date-format-sources-selected-html-date form-item-date-format-sources-selected-html-date">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-date-format-sources-selected-html-date" type="checkbox" id="edit-date-format-sources-selected-html-date" name="date_format[sources][selected][html_date]" value="html_date" />
+
+        <label for="edit-date-format-sources-selected-html-date" class="option">HTML Date  <span class="config-name">(html_date)</span></label>
+      </div>
+<div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-date-format-sources-selected-html-datetime form-item-date-format-sources-selected-html-datetime">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-date-format-sources-selected-html-datetime" type="checkbox" id="edit-date-format-sources-selected-html-datetime" name="date_format[sources][selected][html_datetime]" value="html_datetime" />
+
+        <label for="edit-date-format-sources-selected-html-datetime" class="option">HTML Datetime  <span class="config-name">(html_datetime)</span></label>
+      </div>
+<div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-date-format-sources-selected-html-month form-item-date-format-sources-selected-html-month">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-date-format-sources-selected-html-month" type="checkbox" id="edit-date-format-sources-selected-html-month" name="date_format[sources][selected][html_month]" value="html_month" />
+
+        <label for="edit-date-format-sources-selected-html-month" class="option">HTML Month  <span class="config-name">(html_month)</span></label>
+      </div>
+<div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-date-format-sources-selected-html-time form-item-date-format-sources-selected-html-time">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-date-format-sources-selected-html-time" type="checkbox" id="edit-date-format-sources-selected-html-time" name="date_format[sources][selected][html_time]" value="html_time" />
+
+        <label for="edit-date-format-sources-selected-html-time" class="option">HTML Time  <span class="config-name">(html_time)</span></label>
+      </div>
+<div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-date-format-sources-selected-html-week form-item-date-format-sources-selected-html-week">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-date-format-sources-selected-html-week" type="checkbox" id="edit-date-format-sources-selected-html-week" name="date_format[sources][selected][html_week]" value="html_week" />
+
+        <label for="edit-date-format-sources-selected-html-week" class="option">HTML Week  <span class="config-name">(html_week)</span></label>
+      </div>
+<div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-date-format-sources-selected-html-year form-item-date-format-sources-selected-html-year">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-date-format-sources-selected-html-year" type="checkbox" id="edit-date-format-sources-selected-html-year" name="date_format[sources][selected][html_year]" value="html_year" />
+
+        <label for="edit-date-format-sources-selected-html-year" class="option">HTML Year  <span class="config-name">(html_year)</span></label>
+      </div>
+<div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-date-format-sources-selected-html-yearless-date form-item-date-format-sources-selected-html-yearless-date">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-date-format-sources-selected-html-yearless-date" type="checkbox" id="edit-date-format-sources-selected-html-yearless-date" name="date_format[sources][selected][html_yearless_date]" value="html_yearless_date" />
+
+        <label for="edit-date-format-sources-selected-html-yearless-date" class="option">HTML Yearless date  <span class="config-name">(html_yearless_date)</span></label>
+      </div>
+<div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-date-format-sources-selected-long form-item-date-format-sources-selected-long">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-date-format-sources-selected-long" type="checkbox" id="edit-date-format-sources-selected-long" name="date_format[sources][selected][long]" value="long" />
+
+        <label for="edit-date-format-sources-selected-long" class="option">Default long date  <span class="config-name">(long)</span></label>
+      </div>
+<div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-date-format-sources-selected-medium form-item-date-format-sources-selected-medium">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-date-format-sources-selected-medium" type="checkbox" id="edit-date-format-sources-selected-medium" name="date_format[sources][selected][medium]" value="medium" />
+
+        <label for="edit-date-format-sources-selected-medium" class="option">Default medium date  <span class="config-name">(medium)</span></label>
+      </div>
+<div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-date-format-sources-selected-short form-item-date-format-sources-selected-short">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-date-format-sources-selected-short" type="checkbox" id="edit-date-format-sources-selected-short" name="date_format[sources][selected][short]" value="short" />
+
+        <label for="edit-date-format-sources-selected-short" class="option">Default short date  <span class="config-name">(short)</span></label>
+      </div>
+</div>
+</span></div>
+</details>
+<div class='component-list features-export-list features-export-empty'><span class='component-included'><div id="edit-date-format-included" class="form-checkboxes"></div>
+</span><span class='component-detected'><div id="edit-date-format-detected" class="form-checkboxes"></div>
+</span><span class='component-added'><div id="edit-date-format-added" class="form-checkboxes"></div>
+</span></div></div><div class='features-export-parent component-features_bundle'><details class="features-export-component js-form-wrapper form-wrapper" data-drupal-selector="edit-features-bundle-sources" id="edit-features-bundle-sources">    <summary role="button" aria-controls="edit-features-bundle-sources" aria-expanded="false" aria-pressed="false">Features bundle (<span class="component-count">1</span>)</summary><div class="details-wrapper">
+    <span class='component-select'><div id="edit-sources-features-bundle" class="form-checkboxes"><div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-features-bundle-sources-selected-default form-item-features-bundle-sources-selected-default">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-features-bundle-sources-selected-default" type="checkbox" id="edit-features-bundle-sources-selected-default" name="features_bundle[sources][selected][default]" value="default" />
+
+        <label for="edit-features-bundle-sources-selected-default" class="option">Default  <span class="config-name">(default)</span></label>
+      </div>
+</div>
+</span></div>
+</details>
+<div class='component-list features-export-list features-export-empty'><span class='component-included'><div id="edit-features-bundle-included" class="form-checkboxes"></div>
+</span><span class='component-detected'><div id="edit-features-bundle-detected" class="form-checkboxes"></div>
+</span><span class='component-added'><div id="edit-features-bundle-added" class="form-checkboxes"></div>
+</span></div></div><div class='features-export-parent component-entity_form_mode'><details class="features-export-component js-form-wrapper form-wrapper" data-drupal-selector="edit-entity-form-mode-sources" id="edit-entity-form-mode-sources">    <summary role="button" aria-controls="edit-entity-form-mode-sources" aria-expanded="false" aria-pressed="false">Form mode (<span class="component-count">1</span>)</summary><div class="details-wrapper">
+    <span class='component-select'><div id="edit-sources-entity-form-mode" class="form-checkboxes"><div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-entity-form-mode-sources-selected-userregister form-item-entity-form-mode-sources-selected-userregister">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-entity-form-mode-sources-selected-userregister" type="checkbox" id="edit-entity-form-mode-sources-selected-userregister" name="entity_form_mode[sources][selected][user.register]" value="user.register" />
+
+        <label for="edit-entity-form-mode-sources-selected-userregister" class="option">Register  <span class="config-name">(user.register)</span></label>
+      </div>
+</div>
+</span></div>
+</details>
+<div class='component-list features-export-list features-export-empty'><span class='component-included'><div id="edit-entity-form-mode-included" class="form-checkboxes"></div>
+</span><span class='component-detected'><div id="edit-entity-form-mode-detected" class="form-checkboxes"></div>
+</span><span class='component-added'><div id="edit-entity-form-mode-added" class="form-checkboxes"></div>
+</span></div></div><div class='features-export-parent component-menu'><details class="features-export-component js-form-wrapper form-wrapper" data-drupal-selector="edit-menu-sources" id="edit-menu-sources">    <summary role="button" aria-controls="edit-menu-sources" aria-expanded="false" aria-pressed="false">Menu (<span class="component-count">5</span>)</summary><div class="details-wrapper">
+    <span class='component-select'><div id="edit-sources-menu" class="form-checkboxes"><div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-menu-sources-selected-account form-item-menu-sources-selected-account">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-menu-sources-selected-account" type="checkbox" id="edit-menu-sources-selected-account" name="menu[sources][selected][account]" value="account" />
+
+        <label for="edit-menu-sources-selected-account" class="option">User account menu  <span class="config-name">(account)</span></label>
+      </div>
+<div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-menu-sources-selected-admin form-item-menu-sources-selected-admin">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-menu-sources-selected-admin" type="checkbox" id="edit-menu-sources-selected-admin" name="menu[sources][selected][admin]" value="admin" />
+
+        <label for="edit-menu-sources-selected-admin" class="option">Administration  <span class="config-name">(admin)</span></label>
+      </div>
+<div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-menu-sources-selected-footer form-item-menu-sources-selected-footer">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-menu-sources-selected-footer" type="checkbox" id="edit-menu-sources-selected-footer" name="menu[sources][selected][footer]" value="footer" />
+
+        <label for="edit-menu-sources-selected-footer" class="option">Footer  <span class="config-name">(footer)</span></label>
+      </div>
+<div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-menu-sources-selected-main form-item-menu-sources-selected-main">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-menu-sources-selected-main" type="checkbox" id="edit-menu-sources-selected-main" name="menu[sources][selected][main]" value="main" />
+
+        <label for="edit-menu-sources-selected-main" class="option">Main navigation  <span class="config-name">(main)</span></label>
+      </div>
+<div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-menu-sources-selected-tools form-item-menu-sources-selected-tools">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-menu-sources-selected-tools" type="checkbox" id="edit-menu-sources-selected-tools" name="menu[sources][selected][tools]" value="tools" />
+
+        <label for="edit-menu-sources-selected-tools" class="option">Tools  <span class="config-name">(tools)</span></label>
+      </div>
+</div>
+</span></div>
+</details>
+<div class='component-list features-export-list features-export-empty'><span class='component-included'><div id="edit-menu-included" class="form-checkboxes"></div>
+</span><span class='component-detected'><div id="edit-menu-detected" class="form-checkboxes"></div>
+</span><span class='component-added'><div id="edit-menu-added" class="form-checkboxes"></div>
+</span></div></div><div class='features-export-parent component-user_role'><details class="features-export-component js-form-wrapper form-wrapper" data-drupal-selector="edit-user-role-sources" id="edit-user-role-sources">    <summary role="button" aria-controls="edit-user-role-sources" aria-expanded="false" aria-pressed="false">Role (<span class="component-count">3</span>)</summary><div class="details-wrapper">
+    <span class='component-select'><div id="edit-sources-user-role" class="form-checkboxes"><div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-user-role-sources-selected-anonymous form-item-user-role-sources-selected-anonymous">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-user-role-sources-selected-anonymous" type="checkbox" id="edit-user-role-sources-selected-anonymous" name="user_role[sources][selected][anonymous]" value="anonymous" />
+
+        <label for="edit-user-role-sources-selected-anonymous" class="option">Anonymous user  <span class="config-name">(anonymous)</span></label>
+      </div>
+<div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-user-role-sources-selected-authenticated form-item-user-role-sources-selected-authenticated">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-user-role-sources-selected-authenticated" type="checkbox" id="edit-user-role-sources-selected-authenticated" name="user_role[sources][selected][authenticated]" value="authenticated" />
+
+        <label for="edit-user-role-sources-selected-authenticated" class="option">Authenticated user  <span class="config-name">(authenticated)</span></label>
+      </div>
+<div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-user-role-sources-selected-yju97cx4 form-item-user-role-sources-selected-yju97cx4">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-user-role-sources-selected-yju97cx4" type="checkbox" id="edit-user-role-sources-selected-yju97cx4" name="user_role[sources][selected][yju97cx4]" value="yju97cx4" />
+
+        <label for="edit-user-role-sources-selected-yju97cx4" class="option">u[SX&gt;&amp;8?  <span class="config-name">(yju97cx4)</span></label>
+      </div>
+</div>
+</span></div>
+</details>
+<div class='component-list features-export-list features-export-empty'><span class='component-included'><div id="edit-user-role-included" class="form-checkboxes"></div>
+</span><span class='component-detected'><div id="edit-user-role-detected" class="form-checkboxes"></div>
+</span><span class='component-added'><div id="edit-user-role-added" class="form-checkboxes"></div>
+</span></div></div><div class='features-export-parent component-entity_view_mode'><details class="features-export-component js-form-wrapper form-wrapper" data-drupal-selector="edit-entity-view-mode-sources" id="edit-entity-view-mode-sources">    <summary role="button" aria-controls="edit-entity-view-mode-sources" aria-expanded="false" aria-pressed="false">View mode (<span class="component-count">2</span>)</summary><div class="details-wrapper">
+    <span class='component-select'><div id="edit-sources-entity-view-mode" class="form-checkboxes"><div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-entity-view-mode-sources-selected-usercompact form-item-entity-view-mode-sources-selected-usercompact">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-entity-view-mode-sources-selected-usercompact" type="checkbox" id="edit-entity-view-mode-sources-selected-usercompact" name="entity_view_mode[sources][selected][user.compact]" value="user.compact" />
+
+        <label for="edit-entity-view-mode-sources-selected-usercompact" class="option">Compact  <span class="config-name">(user.compact)</span></label>
+      </div>
+<div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-entity-view-mode-sources-selected-userfull form-item-entity-view-mode-sources-selected-userfull">
+        <input class="component-select form-checkbox" data-drupal-selector="edit-entity-view-mode-sources-selected-userfull" type="checkbox" id="edit-entity-view-mode-sources-selected-userfull" name="entity_view_mode[sources][selected][user.full]" value="user.full" />
+
+        <label for="edit-entity-view-mode-sources-selected-userfull" class="option">User account  <span class="config-name">(user.full)</span></label>
+      </div>
+</div>
+</span></div>
+</details>
+<div class='component-list features-export-list features-export-empty'><span class='component-included'><div id="edit-entity-view-mode-included" class="form-checkboxes"></div>
+</span><span class='component-detected'><div id="edit-entity-view-mode-detected" class="form-checkboxes"></div>
+</span><span class='component-added'><div id="edit-entity-view-mode-added" class="form-checkboxes"></div>
+</span></div></div><div id='features-legend'><fieldset data-drupal-selector="edit-features-legend" id="edit-features-legend" class="js-form-item form-item js-form-wrapper form-wrapper">
+      <legend>
+    <span class="fieldset-legend">Legend</span>
+  </legend>
+  <div class="fieldset-wrapper">
+            <span class='component-included'>Normal</span> <span class='component-added'>Added</span> <span class='component-detected'>Auto detected</span> <span class='component-conflict'>Conflict</span> 
+          </div>
+</fieldset>
+</div>
+              <div id="edit-export--description" class="description">Expand each component section and select which items should be included in this feature export.</div>
+      </div>
+</fieldset>
+</div><div id='features-export-info'><fieldset data-drupal-selector="edit-info" id="edit-info" class="js-form-item form-item js-form-wrapper form-wrapper">
+      <legend>
+    <span class="fieldset-legend">General Information</span>
+  </legend>
+  <div class="fieldset-wrapper">
+            <div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-name form-item-name">
+      <label for="edit-name">Name</label>
+        <input data-drupal-selector="edit-name" aria-describedby="edit-name--description" type="text" id="edit-name" name="name" value="" size="60" maxlength="128" class="form-text" />
+
+      <span class="field-suffix"> <small id="edit-name-machine-name-suffix">&nbsp;</small></span>
+            <div id="edit-name--description" class="description">
+      Example: Image gallery (Do not begin name with numbers.)
+    </div>
+  </div>
+<div class="js-form-item form-item js-form-type-machine-name form-type-machine-name js-form-item-machine-name form-item-machine-name">
+      <label for="edit-machine-name" class="js-form-required form-required">Machine-readable name</label>
+        <input data-drupal-selector="edit-machine-name" aria-describedby="edit-machine-name--description" dir="ltr" type="text" id="edit-machine-name" name="machine_name" value="" size="60" maxlength="64" class="form-text required" required="required" aria-required="true" />
+
+            <div id="edit-machine-name--description" class="description">
+      Example: image_gallery May only contain lowercase letters, numbers and underscores.
+    </div>
+  </div>
+<div class="js-form-item form-item js-form-type-textarea form-type-textarea js-form-item-description form-item-description">
+      <label for="edit-description">Description</label>
+        <div class="form-textarea-wrapper">
+  <textarea data-drupal-selector="edit-description" aria-describedby="edit-description--description" id="edit-description" name="description" rows="3" cols="60" class="form-textarea resize-vertical"></textarea>
+</div>
+
+            <div id="edit-description--description" class="description">
+      Provide a short description of what users should expect when they install your feature.
+    </div>
+  </div>
+<div class="js-form-item form-item js-form-type-select form-type-select js-form-item-package form-item-package">
+      <label for="edit-package">Bundle</label>
+        <select data-drupal-selector="edit-package" id="edit-package" name="package" class="form-select"><option value="default" selected="selected">Default</option></select>
+        </div>
+<div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-version form-item-version">
+      <label for="edit-version">Version</label>
+        <input data-drupal-selector="edit-version" aria-describedby="edit-version--description" type="text" id="edit-version" name="version" value="" size="30" maxlength="128" class="form-text" />
+
+            <div id="edit-version--description" class="description">
+      Examples: 8.x-1.0, 8.x-1.0-beta1
+    </div>
+  </div>
+<div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-require-all form-item-require-all">
+        <input data-drupal-selector="edit-require-all" aria-describedby="edit-require-all--description" type="checkbox" id="edit-require-all" name="require_all" value="1" checked="checked" class="form-checkbox" />
+
+        <label for="edit-require-all" class="option">Mark all config as required</label>
+          <div id="edit-require-all--description" class="description">
+      Required config will be assigned to this feature regardless of other assignment plugins.
+    </div>
+  </div>
+
+          </div>
+</fieldset>
+</div><div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-conflicts form-item-conflicts">
+        <input data-drupal-selector="edit-conflicts" aria-describedby="edit-conflicts--description" type="checkbox" id="edit-conflicts" name="conflicts" value="1" class="form-checkbox" />
+
+        <label for="edit-conflicts" class="option">Allow conflicts</label>
+          <div id="edit-conflicts--description" class="description">
+      Allow configuration to be exported to more than one feature.
+    </div>
+  </div>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><input title="Generate packages and optional profile as a compressed archive for download." data-drupal-selector="edit-actions-archive" type="submit" id="edit-actions-archive" name="archive" value="Download Archive" class="button js-form-submit form-submit" />
+<input title="Write packages and optional profile to the file system." data-drupal-selector="edit-actions-write" type="submit" id="edit-actions-write" name="write" value="Write" class="button js-form-submit form-submit" />
+</div>
+
+</form>
+</div>
+  </div>
+
+    </div>
+          <aside class="layout-sidebar-first" role="complementary">
+        
+      </aside>
+    
+    
+  </main>
+
+  
+</div>
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"admin\/config\/development\/features\/edit","currentPathIsAdmin":true,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","ajaxPageState":{"libraries":"classy\/base,classy\/messages,core\/drupal.active-link,core\/drupal.ajax,core\/drupal.collapse,core\/drupal.machine-name,core\/html5shiv,core\/jquery.form,core\/normalize,features_ui\/drupal.features_ui.admin,system\/admin","theme":"classy","theme_token":null},"ajaxTrustedUrl":{"form_action_cc611e1d":true,"\/admin\/config\/development\/features\/edit?ajax_form=1":true},"features":{"excluded":[],"required":[],"conflicts":{"system_simple":{"system.cron":"system.cron"}},"autodetect":true},"ajax":{"edit-conflicts":{"callback":"::updateForm","wrapper":"features-edit-wrapper","event":"change","url":"\/admin\/config\/development\/features\/edit?ajax_form=1","dialogType":"ajax","submit":{"_triggering_element_name":"conflicts"}},"edit-package":{"callback":"::updateBundle","wrapper":"features-export-info","event":"change","url":"\/admin\/config\/development\/features\/edit?ajax_form=1","dialogType":"ajax","submit":{"_triggering_element_name":"package"}}},"machineName":{"#edit-name":{"target":"#edit-machine-name","label":"Machine name","replace_pattern":"[^a-z0-9_]+","replace":"_","field_prefix":"","field_suffix":"","suffix":"#edit-name-machine-name-suffix"}},"langcode":"en","user":{"uid":"2","permissionsHash":"0e959c0d4e5ff071094aae6fe325592663db7f282d6233a931e72f6726f35ef4"}}</script>
+<script src="/core/assets/vendor/domready/ready.min.js?v=1.0.8"></script>
+
+<!--[if lte IE 9]>
+<script src="/core/assets/vendor/classList/classList.min.js?v=2014-12-13"></script>
+<![endif]-->
+<script src="/core/assets/vendor/jquery/jquery.min.js?v=2.2.3"></script>
+<script src="/core/assets/vendor/jquery-once/jquery.once.min.js?v=2.1.1"></script>
+<script src="/core/misc/drupalSettingsLoader.js?v=8.2.0-dev"></script>
+<script src="/core/misc/drupal.js?v=8.2.0-dev"></script>
+<script src="/core/misc/active-link.js?v=8.2.0-dev"></script>
+<script src="/modules/features/modules/features_ui/js/features_ui.admin.js?v=8.2.0-dev"></script>
+<script src="/core/assets/vendor/jquery-form/jquery.form.min.js?v=3.51"></script>
+<script src="/core/misc/progress.js?v=8.2.0-dev"></script>
+<script src="/core/misc/ajax.js?v=8.2.0-dev"></script>
+<script src="/core/misc/debounce.js?v=8.2.0-dev"></script>
+<script src="/core/assets/vendor/jquery.cookie/jquery.cookie.min.js?v=1.4.1"></script>
+<script src="/core/misc/form.js?v=8.2.0-dev"></script>
+<script src="/core/misc/machine-name.js?v=8.2.0-dev"></script>
+<script src="/core/misc/details-aria.js?v=8.2.0-dev"></script>
+<script src="/core/misc/collapse.js?v=8.2.0-dev"></script>
+
+  </body>
+</html>

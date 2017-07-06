@@ -1,0 +1,14 @@
+uuid: 0e1861a0-8e9a-469b-97d7-33317d99d785
+name: D8.3
+mail: mpotter@phase2technology.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

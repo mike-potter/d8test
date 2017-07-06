@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.%bundle%
+id: node.%bundle%.%view_mode%
+targetEntityType: node
+bundle: %bundle%
+mode: %view_mode%
+content: { }
+hidden: { }

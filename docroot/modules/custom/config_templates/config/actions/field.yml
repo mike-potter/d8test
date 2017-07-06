@@ -1,0 +1,38 @@
+# This is an action used to create a field (instance plus storage)
+# Intended to be called via the "include" plugin from other actions
+
+# Provide your own replacement variables in the calling Action
+"%entity_type%": "node"
+"%bundle%": "content_type"
+"%name%": "field_name"
+"%type%": "text"
+"%weight%": 10
+"%view_mode%": default
+
+replace_in:
+  - source
+  - dest
+  - load
+
+# Prevent enabling this module from running this action automatically
+auto: false
+
+actions:
+
+  field_storage:
+    source: [ "%dest%", "field.storage.%entity_type%.%type%.yml" ]
+    dest: "field.storage.%entity_type%.%name%"
+
+  field_instance:
+    source: [ "%dest%", "field.field.%entity_type%.%type%.yml" ]
+    dest: "field.field.%entity_type%.%bundle%.%name%"
+
+#  # Now, add the field to the form_display and view_display
+#  form_display:
+#    plugin: add
+#    source: "core.entity_form_display.%entity_type%.%bundle%.%view_mode%"
+#    path: [ "content" ]
+#    value:
+#      "%name%":
+#        weight: %weight%
+

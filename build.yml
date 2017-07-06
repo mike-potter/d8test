@@ -1,0 +1,101 @@
+##
+# Build and command-line operations containers for your local environment.
+##
+version: '2.1'
+
+services:
+  # Container for starting a cli for build commands
+  # Usage: docker-compose -f build.yml run --rm cli
+  cli:
+    extends:
+      service: operational
+
+  # Container for running drush in the docroot.
+  # Usage: docker-compose -f build.yml run --rm drush <command>
+  # Where <command> is a direct drush command like cache-rebuild
+  drush:
+    extends:
+      service: operational
+    entrypoint: [ "/init", "drush", "@d8test-build" ]
+    working_dir: /var/www/docroot
+
+  # Container for running Drupal Console in the docroot.
+  # Usage: docker-compose -f build.yml run --rm drupal <command>
+  # Where <command> is a direct drupal command like generate
+  # Note: Only works if the project includes Drupal Console as a composer dependency.
+  drupal:
+    extends:
+      service: operational
+    entrypoint: [ "/init", "/var/www/vendor/bin/drupal --ansi" ]
+    working_dir: /var/www/docroot
+
+  # Container for running grunt in the docroot.
+  # Usage: docker-compose -f build.yml run --rm grunt <command>
+  grunt:
+    extends:
+      service: operational
+    entrypoint: [ "/init", "grunt" ]
+
+  # Operational base service definition for Local environment.
+  #
+  # Unlike `base`, this layer is functional for application interactions.
+  #
+  # Other services inherit these settings via the extends property.
+  # See https://docs.docker.com/compose/extends/#extending-services
+  operational:
+    extends:
+      service: base
+    external_links:
+      - d8test_db:db
+      - d8test_cache:cache
+
+  # Base service definition for Local environment.
+  #
+  # This is not a fully operational build container, lacking access to other
+  # services such as the database or cache needed to properly interact with the
+  # application.
+  #
+  # Uses for this container include filesystem operations. For example:
+  #
+  # docker-compose -f build.yml run --rm base 'rm -Rf node_modules'
+  #
+  # Other services inherit these settings via the extends property.
+  # See https://docs.docker.com/compose/extends/#extending-services
+  base:
+    image: outrigger/build:php70
+    network_mode: "bridge"
+    entrypoint: [ "/init" ]
+    working_dir: /var/www
+    command: /bin/bash
+    volumes:
+      # Primary code mount.
+      - d8test-sync:/var/www # will be mounted on /var/www
+      # By volume mounting project Drush configuration to the user profile the
+      # Docker image can carry Drush configuration and commands itself.
+      # Would be more clean if this volume mount placed the Drush configuration
+      # within the Drupal directory structure.
+      - ./env/build/etc/drush:/root/.drush
+      - ./env/composer:/root/.composer
+      # Local backups are managed within the project directory. This varies by
+      # platform.
+      - ./build/backups:/opt/backups
+      # Persist the cache directories associated with various build tools.
+      - /data/d8test_local/cache/drush:/root/.drush/cache
+      - /data/d8test_local/cache/composer:/root/.composer/cache
+      - /data/d8test_local/cache/npm:/root/.npm
+      - /data/d8test_local/cache/bower:/root/.cache/bower
+      - /data/d8test_local/cache/fontconfig:/root/.cache/fontconfig
+      # SSH key grants read access to private Git repositories.
+      - ~/.ssh/id_rsa_nopass:/root/.ssh/devtools.key
+      - ~/.gitconfig:/root/.gitconfig
+    environment:
+      APP_DOMAIN: www.d8test.vm
+      GDT_DOMAIN: www.d8test.vm
+      PROXY_VIRTUAL_HOST: www.d8test.vm
+      PHP_XDEBUG: "true"
+      PHP_IDE_CONFIG: "serverName=D8"
+      XDEBUG_CONFIG: "remote_host=192.168.99.1"
+
+volumes:
+  d8test-sync:
+    external: true

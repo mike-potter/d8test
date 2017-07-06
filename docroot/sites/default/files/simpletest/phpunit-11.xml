@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Drupal\Tests\features\Unit\FeaturesManagerTest" file="/var/www/docroot/modules/features/tests/src/Unit/FeaturesManagerTest.php" tests="29" assertions="65" failures="0" errors="0" time="0.740872">
+    <testcase name="testGetActiveStorage" class="Drupal\Tests\features\Unit\FeaturesManagerTest" file="/var/www/docroot/modules/features/tests/src/Unit/FeaturesManagerTest.php" line="99" assertions="1" time="0.249208"/>
+    <testcase name="testGetExtensionStorages" class="Drupal\Tests\features\Unit\FeaturesManagerTest" file="/var/www/docroot/modules/features/tests/src/Unit/FeaturesManagerTest.php" line="106" assertions="1" time="0.002925"/>
+    <testsuite name="Drupal\Tests\features\Unit\FeaturesManagerTest::testGetFullName" tests="3" assertions="3" failures="0" errors="0" time="0.007760">
+      <testcase name="testGetFullName with data set #0" assertions="1" time="0.002599"/>
+      <testcase name="testGetFullName with data set #1" assertions="1" time="0.002709"/>
+      <testcase name="testGetFullName with data set #2" assertions="1" time="0.002452"/>
+    </testsuite>
+    <testcase name="testPackages" class="Drupal\Tests\features\Unit\FeaturesManagerTest" file="/var/www/docroot/modules/features/tests/src/Unit/FeaturesManagerTest.php" line="135" assertions="4" time="0.003681"/>
+    <testcase name="testConfigCollection" class="Drupal\Tests\features\Unit\FeaturesManagerTest" file="/var/www/docroot/modules/features/tests/src/Unit/FeaturesManagerTest.php" line="149" assertions="1" time="0.003954"/>
+    <testcase name="testSetPackage" class="Drupal\Tests\features\Unit\FeaturesManagerTest" file="/var/www/docroot/modules/features/tests/src/Unit/FeaturesManagerTest.php" line="159" assertions="1" time="0.003419"/>
+    <testcase name="testAssignInterPackageDependenciesWithoutBundle" class="Drupal\Tests\features\Unit\FeaturesManagerTest" file="/var/www/docroot/modules/features/tests/src/Unit/FeaturesManagerTest.php" line="196" assertions="2" time="0.079476"/>
+    <testcase name="testAssignInterPackageDependenciesWithBundle" class="Drupal\Tests\features\Unit\FeaturesManagerTest" file="/var/www/docroot/modules/features/tests/src/Unit/FeaturesManagerTest.php" line="241" assertions="1" time="0.019324"/>
+    <testcase name="testAssignInterPackageDependenciesPrematureCall" class="Drupal\Tests\features\Unit\FeaturesManagerTest" file="/var/www/docroot/modules/features/tests/src/Unit/FeaturesManagerTest.php" line="290" assertions="2" time="0.008136"/>
+    <testcase name="testReset" class="Drupal\Tests\features\Unit\FeaturesManagerTest" file="/var/www/docroot/modules/features/tests/src/Unit/FeaturesManagerTest.php" line="306" assertions="3" time="0.004248"/>
+    <testcase name="testDetectMissing" class="Drupal\Tests\features\Unit\FeaturesManagerTest" file="/var/www/docroot/modules/features/tests/src/Unit/FeaturesManagerTest.php" line="338" assertions="1" time="0.002577"/>
+    <testcase name="testDetectOverrides" class="Drupal\Tests\features\Unit\FeaturesManagerTest" file="/var/www/docroot/modules/features/tests/src/Unit/FeaturesManagerTest.php" line="353" assertions="1" time="0.015482"/>
+    <testcase name="testAssignConfigPackageWithNonProviderExcludedConfig" class="Drupal\Tests\features\Unit\FeaturesManagerTest" file="/var/www/docroot/modules/features/tests/src/Unit/FeaturesManagerTest.php" line="390" assertions="2" time="0.010149"/>
+    <testcase name="testAssignConfigPackageWithProviderExcludedConfig" class="Drupal\Tests\features\Unit\FeaturesManagerTest" file="/var/www/docroot/modules/features/tests/src/Unit/FeaturesManagerTest.php" line="421" assertions="2" time="0.018857"/>
+    <testcase name="testInitPackageFromNonInstalledExtension" class="Drupal\Tests\features\Unit\FeaturesManagerTest" file="/var/www/docroot/modules/features/tests/src/Unit/FeaturesManagerTest.php" line="448" assertions="7" time="0.041998"/>
+    <testcase name="testInitPackageFromInstalledExtension" class="Drupal\Tests\features\Unit\FeaturesManagerTest" file="/var/www/docroot/modules/features/tests/src/Unit/FeaturesManagerTest.php" line="485" assertions="1" time="0.047612"/>
+    <testcase name="testDetectNewWithNoConfig" class="Drupal\Tests\features\Unit\FeaturesManagerTest" file="/var/www/docroot/modules/features/tests/src/Unit/FeaturesManagerTest.php" line="513" assertions="1" time="0.002673"/>
+    <testcase name="testDetectNewWithNoNewConfig" class="Drupal\Tests\features\Unit\FeaturesManagerTest" file="/var/www/docroot/modules/features/tests/src/Unit/FeaturesManagerTest.php" line="519" assertions="1" time="0.006817"/>
+    <testcase name="testDetectNewWithNewConfig" class="Drupal\Tests\features\Unit\FeaturesManagerTest" file="/var/www/docroot/modules/features/tests/src/Unit/FeaturesManagerTest.php" line="533" assertions="1" time="0.004492"/>
+    <testsuite name="Drupal\Tests\features\Unit\FeaturesManagerTest::testMergeInfoArray" tests="3" assertions="3" failures="0" errors="0" time="0.012612">
+      <testcase name="testMergeInfoArray with data set &quot;empty-info&quot;" assertions="1" time="0.006767"/>
+      <testcase name="testMergeInfoArray with data set &quot;override-info&quot;" assertions="1" time="0.003262"/>
+      <testcase name="testMergeInfoArray with data set &quot;dependency-merging&quot;" assertions="1" time="0.002583"/>
+    </testsuite>
+    <testcase name="testInitPackageWithNewPackage" class="Drupal\Tests\features\Unit\FeaturesManagerTest" file="/var/www/docroot/modules/features/tests/src/Unit/FeaturesManagerTest.php" line="577" assertions="9" time="0.003586"/>
+    <testcase name="testInitPackageWithExistingPackage" class="Drupal\Tests\features\Unit\FeaturesManagerTest" file="/var/www/docroot/modules/features/tests/src/Unit/FeaturesManagerTest.php" line="600" assertions="7" time="0.058401"/>
+    <testcase name="testPrepareFiles" class="Drupal\Tests\features\Unit\FeaturesManagerTest" file="/var/www/docroot/modules/features/tests/src/Unit/FeaturesManagerTest.php" line="665" assertions="8" time="0.006627"/>
+    <testcase name="testGetExportInfoWithoutBundle" class="Drupal\Tests\features\Unit\FeaturesManagerTest" file="/var/www/docroot/modules/features/tests/src/Unit/FeaturesManagerTest.php" line="700" assertions="1" time="0.122117"/>
+    <testcase name="testGetExportInfoWithBundle" class="Drupal\Tests\features\Unit\FeaturesManagerTest" file="/var/www/docroot/modules/features/tests/src/Unit/FeaturesManagerTest.php" line="719" assertions="1" time="0.004741"/>
+  </testsuite>
+</testsuites>

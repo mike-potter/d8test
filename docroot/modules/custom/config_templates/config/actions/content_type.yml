@@ -1,0 +1,25 @@
+# This is an action used to create a content type
+# Intended to be called via the "include" plugin from other actions
+
+# Provide your own replacement variables in the calling Action
+"%bundle%": "content_type"
+
+# Prevent enabling this module from running this action automatically
+auto: false
+
+actions:
+
+  content_type:
+    source: [ "%dest%", "node.type.yml" ]
+    dest: "node.type.%bundle%"
+
+  form_display:
+    source: [ "%dest%", "core.entity_form_display.node.yml" ]
+    dest: "core.entity_form_display.node.%bundle%.%view_mode%"
+    "%view_mode%": default
+
+  view_display:
+    source: [ "%dest%", "core.entity_view_display.node.yml" ]
+    dest: "core.entity_view_display.node.%bundle%.%view_mode%"
+    "%view_mode%": default
+

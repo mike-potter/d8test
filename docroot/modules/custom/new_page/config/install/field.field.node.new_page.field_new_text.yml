@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_new_text
+    - node.type.new_page
+id: node.new_page.field_new_text
+field_name: field_new_text
+entity_type: node
+bundle: new_page
+label: 'New Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Drupal\Tests\features\Unit\PackageTest" file="/var/www/docroot/modules/features/tests/src/Unit/PackageTest.php" tests="4" assertions="6" failures="0" errors="0" time="0.012688">
+    <testcase name="testSetFeaturesInfo" class="Drupal\Tests\features\Unit\PackageTest" file="/var/www/docroot/modules/features/tests/src/Unit/PackageTest.php" line="16" assertions="3" time="0.004934"/>
+    <testcase name="testGetConfig" class="Drupal\Tests\features\Unit\PackageTest" file="/var/www/docroot/modules/features/tests/src/Unit/PackageTest.php" line="25" assertions="1" time="0.001902"/>
+    <testcase name="testAppendConfig" class="Drupal\Tests\features\Unit\PackageTest" file="/var/www/docroot/modules/features/tests/src/Unit/PackageTest.php" line="35" assertions="1" time="0.003429"/>
+    <testcase name="testRemoveConfig" class="Drupal\Tests\features\Unit\PackageTest" file="/var/www/docroot/modules/features/tests/src/Unit/PackageTest.php" line="47" assertions="1" time="0.002423"/>
+  </testsuite>
+</testsuites>

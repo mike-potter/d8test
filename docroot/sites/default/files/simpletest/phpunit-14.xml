@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Drupal\Tests\features\Unit\PackageTest" file="/var/www/docroot/modules/features/tests/src/Unit/PackageTest.php" tests="4" assertions="4" failures="1" errors="0" time="0.012326">
+    <testcase name="testSetFeaturesInfo" class="Drupal\Tests\features\Unit\PackageTest" file="/var/www/docroot/modules/features/tests/src/Unit/PackageTest.php" line="16" assertions="1" time="0.009568">
+      <failure type="PHPUnit_Framework_ExpectationFailedException">Drupal\Tests\features\Unit\PackageTest::testSetFeaturesInfo
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+ Array (
++    'required' =&gt; Array ()
+ )
+
+/var/www/docroot/modules/features/tests/src/Unit/PackageTest.php:20
+</failure>
+      <system-out>object(Drupal\features\Package)#17 (19) {
+  ["machineName":protected]=&gt;
+  string(12) "test_feature"
+  ["name":protected]=&gt;
+  string(0) ""
+  ["description":protected]=&gt;
+  string(0) ""
+  ["version":protected]=&gt;
+  string(0) ""
+  ["core":protected]=&gt;
+  string(3) "8.x"
+  ["type":protected]=&gt;
+  string(6) "module"
+  ["themes":protected]=&gt;
+  array(0) {
+  }
+  ["bundle":protected]=&gt;
+  NULL
+  ["excluded":protected]=&gt;
+  array(0) {
+  }
+  ["required":protected]=&gt;
+  array(0) {
+  }
+  ["info":protected]=&gt;
+  array(0) {
+  }
+  ["dependencies":protected]=&gt;
+  array(0) {
+  }
+  ["status":protected]=&gt;
+  NULL
+  ["state":protected]=&gt;
+  NULL
+  ["directory":protected]=&gt;
+  NULL
+  ["files":protected]=&gt;
+  NULL
+  ["extension":protected]=&gt;
+  NULL
+  ["config":protected]=&gt;
+  array(0) {
+  }
+  ["configOrig":protected]=&gt;
+  array(0) {
+  }
+}
+</system-out>
+    </testcase>
+    <testcase name="testGetConfig" class="Drupal\Tests\features\Unit\PackageTest" file="/var/www/docroot/modules/features/tests/src/Unit/PackageTest.php" line="26" assertions="1" time="0.001037"/>
+    <testcase name="testAppendConfig" class="Drupal\Tests\features\Unit\PackageTest" file="/var/www/docroot/modules/features/tests/src/Unit/PackageTest.php" line="36" assertions="1" time="0.000860"/>
+    <testcase name="testRemoveConfig" class="Drupal\Tests\features\Unit\PackageTest" file="/var/www/docroot/modules/features/tests/src/Unit/PackageTest.php" line="48" assertions="1" time="0.000861"/>
+  </testsuite>
+</testsuites>

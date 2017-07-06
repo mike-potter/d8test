@@ -1,0 +1,32 @@
+uuid: 83529d40-d45e-44ce-9a2a-44649b5f5b04
+langcode: en
+status: '1'
+dependencies:
+  module:
+    - file
+    - image
+    - node
+id: node.myproject_image
+field_name: myproject_image
+entity_type: node
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: ''
+    height: ''
+  target_type: file
+  display_field: ''
+  display_default: ''
+module: image
+locked: ''
+cardinality: '1'
+translatable: '1'
+indexes:
+  target_id:
+    - target_id
+persist_with_no_fields: ''
+custom_storage: ''

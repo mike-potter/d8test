@@ -1,0 +1,6 @@
+{
+    "require": {
+        "drush/drush": "8.x",
+        "hirak/prestissimo": "^0.3"
+    }
+}

@@ -1,0 +1,51 @@
+[03-Sep-2016 03:05:37 Australia/Sydney] PHP Fatal error:  Call to a member function getName() on a non-object in /var/www/docroot/modules/features/modules/features_ui/src/Form/FeaturesEditForm.php on line 220
+[03-Sep-2016 03:05:37 Australia/Sydney] PHP Stack trace:
+[03-Sep-2016 03:05:37 Australia/Sydney] PHP   1. {main}() /var/www/docroot/index.php:0
+[03-Sep-2016 03:05:37 Australia/Sydney] PHP   2. Drupal\Core\DrupalKernel->handle() /var/www/docroot/index.php:19
+[03-Sep-2016 03:05:37 Australia/Sydney] PHP   3. Stack\StackedHttpKernel->handle() /var/www/docroot/core/lib/Drupal/Core/DrupalKernel.php:649
+[03-Sep-2016 03:05:37 Australia/Sydney] PHP   4. Drupal\Core\StackMiddleware\NegotiationMiddleware->handle() /var/www/docroot/vendor/stack/builder/src/Stack/StackedHttpKernel.php:23
+[03-Sep-2016 03:05:37 Australia/Sydney] PHP   5. Drupal\Core\StackMiddleware\ReverseProxyMiddleware->handle() /var/www/docroot/core/lib/Drupal/Core/StackMiddleware/NegotiationMiddleware.php:50
+[03-Sep-2016 03:05:37 Australia/Sydney] PHP   6. Drupal\page_cache\StackMiddleware\PageCache->handle() /var/www/docroot/core/lib/Drupal/Core/StackMiddleware/ReverseProxyMiddleware.php:47
+[03-Sep-2016 03:05:37 Australia/Sydney] PHP   7. Drupal\page_cache\StackMiddleware\PageCache->pass() /var/www/docroot/core/modules/page_cache/src/StackMiddleware/PageCache.php:78
+[03-Sep-2016 03:05:37 Australia/Sydney] PHP   8. Drupal\Core\StackMiddleware\KernelPreHandle->handle() /var/www/docroot/core/modules/page_cache/src/StackMiddleware/PageCache.php:99
+[03-Sep-2016 03:05:37 Australia/Sydney] PHP   9. Drupal\Core\StackMiddleware\Session->handle() /var/www/docroot/core/lib/Drupal/Core/StackMiddleware/KernelPreHandle.php:47
+[03-Sep-2016 03:05:37 Australia/Sydney] PHP  10. Symfony\Component\HttpKernel\HttpKernel->handle() /var/www/docroot/core/lib/Drupal/Core/StackMiddleware/Session.php:57
+[03-Sep-2016 03:05:37 Australia/Sydney] PHP  11. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /var/www/docroot/vendor/symfony/http-kernel/HttpKernel.php:64
+[03-Sep-2016 03:05:37 Australia/Sydney] PHP  12. call_user_func_array:{/var/www/docroot/vendor/symfony/http-kernel/HttpKernel.php:144}() /var/www/docroot/vendor/symfony/http-kernel/HttpKernel.php:144
+[03-Sep-2016 03:05:37 Australia/Sydney] PHP  13. Drupal\Core\EventSubscriber\EarlyRenderingControllerWrapperSubscriber->Drupal\Core\EventSubscriber\{closure}() /var/www/docroot/vendor/symfony/http-kernel/HttpKernel.php:144
+[03-Sep-2016 03:05:37 Australia/Sydney] PHP  14. Drupal\Core\EventSubscriber\EarlyRenderingControllerWrapperSubscriber->wrapControllerExecutionInRenderContext() /var/www/docroot/core/lib/Drupal/Core/EventSubscriber/EarlyRenderingControllerWrapperSubscriber.php:97
+[03-Sep-2016 03:05:37 Australia/Sydney] PHP  15. Drupal\Core\Render\Renderer->executeInRenderContext() /var/www/docroot/core/lib/Drupal/Core/EventSubscriber/EarlyRenderingControllerWrapperSubscriber.php:124
+[03-Sep-2016 03:05:37 Australia/Sydney] PHP  16. Drupal\Core\EventSubscriber\EarlyRenderingControllerWrapperSubscriber->Drupal\Core\EventSubscriber\{closure}() /var/www/docroot/core/lib/Drupal/Core/Render/Renderer.php:574
+[03-Sep-2016 03:05:37 Australia/Sydney] PHP  17. call_user_func_array:{/var/www/docroot/core/lib/Drupal/Core/EventSubscriber/EarlyRenderingControllerWrapperSubscriber.php:123}() /var/www/docroot/core/lib/Drupal/Core/EventSubscriber/EarlyRenderingControllerWrapperSubscriber.php:123
+[03-Sep-2016 03:05:37 Australia/Sydney] PHP  18. Drupal\Core\Controller\FormController->getContentResult() /var/www/docroot/core/lib/Drupal/Core/EventSubscriber/EarlyRenderingControllerWrapperSubscriber.php:123
+[03-Sep-2016 03:05:37 Australia/Sydney] PHP  19. Drupal\Core\Form\FormBuilder->buildForm() /var/www/docroot/core/lib/Drupal/Core/Controller/FormController.php:74
+[03-Sep-2016 03:05:37 Australia/Sydney] PHP  20. Drupal\Core\Form\FormBuilder->retrieveForm() /var/www/docroot/core/lib/Drupal/Core/Form/FormBuilder.php:271
+[03-Sep-2016 03:05:37 Australia/Sydney] PHP  21. call_user_func_array:{/var/www/docroot/core/lib/Drupal/Core/Form/FormBuilder.php:512}() /var/www/docroot/core/lib/Drupal/Core/Form/FormBuilder.php:512
+[03-Sep-2016 03:05:37 Australia/Sydney] PHP  22. Drupal\features_ui\Form\FeaturesEditForm->buildForm() /var/www/docroot/core/lib/Drupal/Core/Form/FormBuilder.php:512
+[03-Sep-2016 03:05:38 Australia/Sydney] PHP Fatal error:  Call to a member function children() on a non-object in /var/www/docroot/modules/features/modules/features_ui/src/Tests/FeaturesCreateUITest.php on line 85
+[03-Sep-2016 03:05:38 Australia/Sydney] PHP Stack trace:
+[03-Sep-2016 03:05:38 Australia/Sydney] PHP   1. {main}() /var/www/docroot/index.php:0
+[03-Sep-2016 03:05:38 Australia/Sydney] PHP   2. Drupal\Core\DrupalKernel->handle() /var/www/docroot/index.php:19
+[03-Sep-2016 03:05:38 Australia/Sydney] PHP   3. Stack\StackedHttpKernel->handle() /var/www/docroot/core/lib/Drupal/Core/DrupalKernel.php:649
+[03-Sep-2016 03:05:38 Australia/Sydney] PHP   4. Drupal\Core\StackMiddleware\NegotiationMiddleware->handle() /var/www/docroot/vendor/stack/builder/src/Stack/StackedHttpKernel.php:23
+[03-Sep-2016 03:05:38 Australia/Sydney] PHP   5. Drupal\Core\StackMiddleware\ReverseProxyMiddleware->handle() /var/www/docroot/core/lib/Drupal/Core/StackMiddleware/NegotiationMiddleware.php:50
+[03-Sep-2016 03:05:38 Australia/Sydney] PHP   6. Drupal\page_cache\StackMiddleware\PageCache->handle() /var/www/docroot/core/lib/Drupal/Core/StackMiddleware/ReverseProxyMiddleware.php:47
+[03-Sep-2016 03:05:38 Australia/Sydney] PHP   7. Drupal\page_cache\StackMiddleware\PageCache->pass() /var/www/docroot/core/modules/page_cache/src/StackMiddleware/PageCache.php:78
+[03-Sep-2016 03:05:38 Australia/Sydney] PHP   8. Drupal\Core\StackMiddleware\KernelPreHandle->handle() /var/www/docroot/core/modules/page_cache/src/StackMiddleware/PageCache.php:99
+[03-Sep-2016 03:05:38 Australia/Sydney] PHP   9. Drupal\Core\StackMiddleware\Session->handle() /var/www/docroot/core/lib/Drupal/Core/StackMiddleware/KernelPreHandle.php:47
+[03-Sep-2016 03:05:38 Australia/Sydney] PHP  10. Symfony\Component\HttpKernel\HttpKernel->handle() /var/www/docroot/core/lib/Drupal/Core/StackMiddleware/Session.php:57
+[03-Sep-2016 03:05:38 Australia/Sydney] PHP  11. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /var/www/docroot/vendor/symfony/http-kernel/HttpKernel.php:64
+[03-Sep-2016 03:05:38 Australia/Sydney] PHP  12. call_user_func_array:{/var/www/docroot/vendor/symfony/http-kernel/HttpKernel.php:144}() /var/www/docroot/vendor/symfony/http-kernel/HttpKernel.php:144
+[03-Sep-2016 03:05:38 Australia/Sydney] PHP  13. Drupal\Core\EventSubscriber\EarlyRenderingControllerWrapperSubscriber->Drupal\Core\EventSubscriber\{closure}() /var/www/docroot/vendor/symfony/http-kernel/HttpKernel.php:144
+[03-Sep-2016 03:05:38 Australia/Sydney] PHP  14. Drupal\Core\EventSubscriber\EarlyRenderingControllerWrapperSubscriber->wrapControllerExecutionInRenderContext() /var/www/docroot/core/lib/Drupal/Core/EventSubscriber/EarlyRenderingControllerWrapperSubscriber.php:97
+[03-Sep-2016 03:05:38 Australia/Sydney] PHP  15. Drupal\Core\Render\Renderer->executeInRenderContext() /var/www/docroot/core/lib/Drupal/Core/EventSubscriber/EarlyRenderingControllerWrapperSubscriber.php:124
+[03-Sep-2016 03:05:38 Australia/Sydney] PHP  16. Drupal\Core\EventSubscriber\EarlyRenderingControllerWrapperSubscriber->Drupal\Core\EventSubscriber\{closure}() /var/www/docroot/core/lib/Drupal/Core/Render/Renderer.php:574
+[03-Sep-2016 03:05:38 Australia/Sydney] PHP  17. call_user_func_array:{/var/www/docroot/core/lib/Drupal/Core/EventSubscriber/EarlyRenderingControllerWrapperSubscriber.php:123}() /var/www/docroot/core/lib/Drupal/Core/EventSubscriber/EarlyRenderingControllerWrapperSubscriber.php:123
+[03-Sep-2016 03:05:38 Australia/Sydney] PHP  18. Drupal\system\Controller\BatchController->batchPage() /var/www/docroot/core/lib/Drupal/Core/EventSubscriber/EarlyRenderingControllerWrapperSubscriber.php:123
+[03-Sep-2016 03:05:38 Australia/Sydney] PHP  19. _batch_page() /var/www/docroot/core/modules/system/src/Controller/BatchController.php:55
+[03-Sep-2016 03:05:38 Australia/Sydney] PHP  20. _batch_do() /var/www/docroot/core/includes/batch.inc:77
+[03-Sep-2016 03:05:38 Australia/Sydney] PHP  21. _batch_process() /var/www/docroot/core/includes/batch.inc:95
+[03-Sep-2016 03:05:38 Australia/Sydney] PHP  22. call_user_func_array:{/var/www/docroot/core/includes/batch.inc:252}() /var/www/docroot/core/includes/batch.inc:252
+[03-Sep-2016 03:05:38 Australia/Sydney] PHP  23. _simpletest_batch_operation() /var/www/docroot/core/includes/batch.inc:252
+[03-Sep-2016 03:05:38 Australia/Sydney] PHP  24. Drupal\simpletest\TestBase->run() /var/www/docroot/core/modules/simpletest/simpletest.module:416
+[03-Sep-2016 03:05:38 Australia/Sydney] PHP  25. Drupal\features_ui\Tests\FeaturesCreateUITest->testCreateFeaturesUI() /var/www/docroot/core/modules/simpletest/src/TestBase.php:1060

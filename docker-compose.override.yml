@@ -1,0 +1,14 @@
+##
+# Local override to activate unison sync.
+##
+version: '2.1'
+
+services:
+  # Main Application service.
+  www:
+    volumes:
+      - d8test-sync:/var/www
+
+volumes:
+  d8test-sync:
+    external: true

@@ -1,0 +1,21 @@
+uuid: 429f5246-8519-408f-bed5-db4617ea099a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_my_list
+    - node.type.project_blog
+  module:
+    - options
+id: node.project_blog.field_my_list
+field_name: field_my_list
+entity_type: node
+bundle: project_blog
+label: 'A Selection List'
+description: 'Select a value from this list'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,25 @@
+uuid: 77ed08d7-31ec-4fe1-9a24-e0bce19721b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_content
+    - node.type.page
+    - node.type.project_blog
+id: node.project_blog.field_related_content
+field_name: field_related_content
+entity_type: node
+bundle: project_blog
+label: 'Related blogs'
+description: 'Select a related blog article'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    target_bundles:
+      - page
+      - project_blog
+  handler: 'default:node'
+field_type: entity_reference

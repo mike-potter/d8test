@@ -1,0 +1,26 @@
+uuid: bee937ec-bf1a-4dd2-8053-f0866cf1daa6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.p2component_image.field_p2component_image
+    - paragraphs.paragraphs_type.p2component_image
+  module:
+    - image
+_core:
+  default_config_hash: W2tWjBSpsPaPY7e1QpJfrLFIBUhfpM5vf4Als2DuTMc
+id: paragraph.p2component_image.default
+targetEntityType: paragraph
+bundle: p2component_image
+mode: default
+content:
+  field_p2component_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

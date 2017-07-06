@@ -1,0 +1,11 @@
+name: 'New Page'
+description: 'Provides New Page content type and related configuration. My description'
+type: module
+core: 8.x
+dependencies:
+  - field
+  - menu_ui
+  - node
+  - path
+  - text
+  - user

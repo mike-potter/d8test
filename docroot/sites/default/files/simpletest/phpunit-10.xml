@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Drupal\Tests\features\Unit\PackageTest" file="/var/www/docroot/modules/features/tests/src/Unit/PackageTest.php" tests="4" assertions="4" failures="1" errors="0" time="0.017015">
+    <testcase name="testSetFeaturesInfo" class="Drupal\Tests\features\Unit\PackageTest" file="/var/www/docroot/modules/features/tests/src/Unit/PackageTest.php" line="16" assertions="1" time="0.011282">
+      <failure type="PHPUnit_Framework_ExpectationFailedException">Drupal\Tests\features\Unit\PackageTest::testSetFeaturesInfo
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+ Array (
++    'required' =&gt; Array ()
+ )
+
+/var/www/docroot/modules/features/tests/src/Unit/PackageTest.php:19
+</failure>
+    </testcase>
+    <testcase name="testGetConfig" class="Drupal\Tests\features\Unit\PackageTest" file="/var/www/docroot/modules/features/tests/src/Unit/PackageTest.php" line="25" assertions="1" time="0.002094"/>
+    <testcase name="testAppendConfig" class="Drupal\Tests\features\Unit\PackageTest" file="/var/www/docroot/modules/features/tests/src/Unit/PackageTest.php" line="35" assertions="1" time="0.001714"/>
+    <testcase name="testRemoveConfig" class="Drupal\Tests\features\Unit\PackageTest" file="/var/www/docroot/modules/features/tests/src/Unit/PackageTest.php" line="47" assertions="1" time="0.001925"/>
+  </testsuite>
+</testsuites>

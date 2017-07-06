@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Drupal\Tests\config_actions\Unit\ConfigActionsTransformTest" file="/var/www/docroot/modules/config_actions/tests/src/Unit/ConfigActionsTransformTest.php" tests="5" assertions="10" failures="0" errors="0" time="0.055490">
+    <testcase name="testReplace" class="Drupal\Tests\config_actions\Unit\ConfigActionsTransformTest" file="/var/www/docroot/modules/config_actions/tests/src/Unit/ConfigActionsTransformTest.php" line="20" assertions="2" time="0.026205"/>
+    <testcase name="testAdd" class="Drupal\Tests\config_actions\Unit\ConfigActionsTransformTest" file="/var/www/docroot/modules/config_actions/tests/src/Unit/ConfigActionsTransformTest.php" line="43" assertions="1" time="0.006799"/>
+    <testcase name="testRead" class="Drupal\Tests\config_actions\Unit\ConfigActionsTransformTest" file="/var/www/docroot/modules/config_actions/tests/src/Unit/ConfigActionsTransformTest.php" line="56" assertions="1" time="0.006913"/>
+    <testcase name="testChange" class="Drupal\Tests\config_actions\Unit\ConfigActionsTransformTest" file="/var/www/docroot/modules/config_actions/tests/src/Unit/ConfigActionsTransformTest.php" line="67" assertions="4" time="0.008597"/>
+    <testcase name="testDelete" class="Drupal\Tests\config_actions\Unit\ConfigActionsTransformTest" file="/var/www/docroot/modules/config_actions/tests/src/Unit/ConfigActionsTransformTest.php" line="91" assertions="2" time="0.006976"/>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,16 @@
+name: 'My Project Blog'
+description: 'Provides My Project Blog content type and related configuration. This is the blog content type for the project'
+type: module
+core: 8.x
+dependencies:
+  - config_actions
+  - datetime
+  - entity_reference_revisions
+  - field
+  - menu_ui
+  - node
+  - options
+  - paragraphs
+  - path
+  - text
+  - user

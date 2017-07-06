@@ -1,0 +1,24 @@
+uuid: c1821cc4-5d12-429c-a4bf-f7cae3d7d6d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p2component_body
+    - paragraphs.paragraphs_type.p2component_text
+  module:
+    - text
+_core:
+  default_config_hash: kDyz__1S9j8_clfUQGoiVVEKXWtk3upFQeOA6Uvn2Uo
+id: paragraph.p2component_text.field_p2component_body
+field_name: field_p2component_body
+entity_type: paragraph
+bundle: p2component_text
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary
