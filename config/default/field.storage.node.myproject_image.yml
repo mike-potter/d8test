@@ -1,6 +1,6 @@
 uuid: 83529d40-d45e-44ce-9a2a-44649b5f5b04
 langcode: en
-status: '1'
+status: true
 dependencies:
   module:
     - file
@@ -16,17 +16,17 @@ settings:
     uuid: ''
     alt: ''
     title: ''
-    width: ''
-    height: ''
+    width: null
+    height: null
   target_type: file
-  display_field: ''
-  display_default: ''
+  display_field: false
+  display_default: false
 module: image
-locked: ''
-cardinality: '1'
-translatable: '1'
+locked: false
+cardinality: 1
+translatable: true
 indexes:
   target_id:
     - target_id
-persist_with_no_fields: ''
-custom_storage: ''
+persist_with_no_fields: false
+custom_storage: false
