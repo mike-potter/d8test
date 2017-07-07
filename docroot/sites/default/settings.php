@@ -727,6 +727,7 @@ $databases['default']['default'] = array (
   'prefix' => getenv('DB_ENV_MYSQL_PREFIX'),
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
 );
-$settings['install_profile'] = 'standard';
+//$settings['install_profile'] = 'standard';
 $config_directories[CONFIG_SYNC_DIRECTORY] = dirname(DRUPAL_ROOT) . "/config/default";
 //$config['config_split.config_split.local']['status']= TRUE;
+$settings['install_profile'] = 'standard';
