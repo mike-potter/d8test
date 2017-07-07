@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.project_blog.field_my_date
     - field.field.node.project_blog.field_my_list
     - field.field.node.project_blog.field_my_text
+    - field.field.node.project_blog.field_new_text_field
     - field.field.node.project_blog.field_related_content
     - node.type.project_blog
   module:
@@ -17,6 +18,14 @@ targetEntityType: node
 bundle: project_blog
 mode: default
 content:
+  field_new_text_field:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   links:
     weight: 100
     region: content

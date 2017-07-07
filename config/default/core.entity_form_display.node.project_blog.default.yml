@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.project_blog.field_my_date
     - field.field.node.project_blog.field_my_list
     - field.field.node.project_blog.field_my_text
+    - field.field.node.project_blog.field_new_text_field
     - field.field.node.project_blog.field_related_content
     - node.type.project_blog
   module:
@@ -22,6 +23,14 @@ content:
     weight: 10
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_new_text_field:
+    weight: 31
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   langcode:
     type: language_select
