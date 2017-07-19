@@ -728,6 +728,7 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
 );
 //$settings['install_profile'] = 'standard';
-$config_directories[CONFIG_SYNC_DIRECTORY] = dirname(DRUPAL_ROOT) . "/config/default";
+//$config_directories[CONFIG_SYNC_DIRECTORY] = dirname(DRUPAL_ROOT) . "/config/default";
 //$config['config_split.config_split.local']['status']= TRUE;
-$settings['install_profile'] = 'standard';
+$settings['install_profile'] = 'd8test';
+$config_directories[CONFIG_SYNC_DIRECTORY] = "profiles/d8test/config/sync";
