@@ -1,9 +1,0 @@
-uuid: 9d013def-a990-4d56-96f9-b840cf69c88a
-langcode: en
-status: true
-dependencies: {  }
-name: %name%
-vid: %vocab%
-description: ''
-hierarchy: 0
-weight: 0

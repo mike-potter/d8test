@@ -1,8 +1,0 @@
-name: 'P2 Components'
-type: module
-core: 8.x
-dependencies:
-  - entity_reference_revisions
-  - field
-  - node
-  - paragraphs
