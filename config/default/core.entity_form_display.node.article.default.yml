@@ -1,47 +1,58 @@
-uuid: b3c2fe2d-e472-4224-9c0a-14d4f462bd5e
+uuid: eb443c7c-5539-49c6-be53-3fe553eecc1a
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.gallery.body
-    - field.field.node.gallery.field_myimage
+    - field.field.node.article.body
+    - field.field.node.article.comment
+    - field.field.node.article.field_image
+    - field.field.node.article.field_tags
     - image.style.thumbnail
-    - node.type.gallery
+    - node.type.article
   module:
+    - comment
     - image
     - path
     - text
-id: node.gallery.default
+_core:
+  default_config_hash: N8YzXGJXPIvh1OPpjuLH_XDvPwWBpKnTx0GwAvgU0Rg
+id: node.article.default
 targetEntityType: node
-bundle: gallery
+bundle: article
 mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 31
+    weight: 1
+    region: content
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
+  comment:
+    type: comment_default
+    weight: 20
     region: content
+    settings: {  }
+    third_party_settings: {  }
   created:
     type: datetime_timestamp
     weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_myimage:
-    weight: 32
+  field_image:
+    type: image_image
+    weight: 4
+    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    type: image_image
-    region: content
-  langcode:
-    type: language_select
-    weight: 2
+  field_tags:
+    type: entity_reference_autocomplete_tags
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -67,7 +78,7 @@ content:
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60
@@ -76,10 +87,10 @@ content:
   uid:
     type: entity_reference_autocomplete
     weight: 5
+    region: content
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
-    region: content
     third_party_settings: {  }
 hidden: {  }

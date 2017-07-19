@@ -1,21 +1,21 @@
-uuid: 1a7dc2fe-330f-4183-9dbc-971d3e433b1c
+uuid: 46084423-2482-479d-bb58-0d845a2a6d0d
 langcode: en
 status: true
 dependencies:
   module:
     - file
     - image
-    - paragraphs
+    - node
 _core:
-  default_config_hash: s-OsquQ6v5Dce7oMECezT-5Ct3j1eAz4jdkyNfKhlGs
-id: paragraph.field_p2component_image
-field_name: field_p2component_image
-entity_type: paragraph
+  default_config_hash: SkXIPKZYiIMMtnBmfnxk58RYfbZ8cHSw5NZPY_JByME
+id: node.field_image
+field_name: field_image
+entity_type: node
 type: image
 settings:
   uri_scheme: public
   default_image:
-    uuid: ''
+    uuid: null
     alt: ''
     title: ''
     width: null
@@ -27,6 +27,8 @@ module: image
 locked: false
 cardinality: 1
 translatable: true
-indexes: {  }
+indexes:
+  target_id:
+    - target_id
 persist_with_no_fields: false
 custom_storage: false

@@ -1,6 +1,6 @@
-uuid: 0e1861a0-8e9a-469b-97d7-33317d99d785
-name: D8.3
-mail: mpotter@phase2technology.com
+uuid: c8cb4a92-d092-4ced-abb8-aeeb522238e7
+name: Site-Install
+mail: admin@example.com
 slogan: ''
 page:
   403: ''
@@ -11,4 +11,4 @@ weight_select_max: 100
 langcode: en
 default_langcode: en
 _core:
-  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo

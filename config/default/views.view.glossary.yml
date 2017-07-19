@@ -1,4 +1,4 @@
-uuid: 777a8809-9304-4822-a6a9-4326402b5bc5
+uuid: 16d6d688-53d8-4e96-a565-061a6d3df9c5
 langcode: en
 status: false
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
     - node
     - user
 _core:
-  default_config_hash: '-pCFOVfbt__jaohFffTLnVavh4OBC6CjREAnchiRomQ'
+  default_config_hash: _12Vkw1VGBz_s0_W_LLVCrBPpioNSnB6zcd1lUAQubM
 id: glossary
 label: Glossary
 module: node
@@ -446,8 +446,6 @@ display:
         weight: 0
         menu_name: main
         parent: ''
-        enabled: true
-        expanded: false
       display_extenders: {  }
     cache_metadata:
       contexts:

@@ -1,4 +1,4 @@
-uuid: 808752be-cfff-4eab-b8f1-7f6e61daa761
+uuid: d78f09f8-49ac-48b5-b71e-44a73dfd44fd
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
     - node
     - user
 _core:
-  default_config_hash: rwRoOr3DiobxwoWSmtUcna1LQz5_HxHvS7H5dl7_-Uo
+  default_config_hash: GNfx9kN8-0_KgQ-xf3fjdXCCzZwXCI8T0IPFW8SIe7g
 id: frontpage
 label: Frontpage
 module: node
@@ -291,9 +291,6 @@ display:
     display_options:
       path: node
       display_extenders: {  }
-      menu:
-        enabled: true
-        expanded: false
     display_plugin: page
     display_title: Page
     id: page_1

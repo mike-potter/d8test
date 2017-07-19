@@ -1,16 +1,18 @@
-uuid: 63720019-a332-4e05-a6b4-f8b70035c4d7
+uuid: c78a418d-08a3-4b3f-b985-10e6ee0dda8f
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.gallery
+    - node.type.article
   module:
     - text
-id: node.gallery.body
+_core:
+  default_config_hash: Ay3b2hq42cpQTFB_lNu8S2ZxuVIY6-dlBsc7vLeJ-YY
+id: node.article.body
 field_name: body
 entity_type: node
-bundle: gallery
+bundle: article
 label: Body
 description: ''
 required: false

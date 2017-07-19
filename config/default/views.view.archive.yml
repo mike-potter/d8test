@@ -1,4 +1,4 @@
-uuid: 9d711a0d-ede1-438c-be0f-a2676e1cef3b
+uuid: 019331a4-ed6f-4ca1-a313-ef2b65c4e6ef
 langcode: en
 status: false
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
     - node
     - user
 _core:
-  default_config_hash: Ea3cxQo9FjYVScZDVackg-6ID_GgTkdKORm_APgV-5I
+  default_config_hash: SRH1EhxAiIRj01P9xYv0h_LfIfWxjll0Yq-eDfjziFI
 id: archive
 label: Archive
 module: node
@@ -232,9 +232,6 @@ display:
         options: {  }
       path: archive
       display_extenders: {  }
-      menu:
-        enabled: true
-        expanded: false
     cache_metadata:
       contexts:
         - 'languages:language_interface'
